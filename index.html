@@ -32,20 +32,125 @@
     <main>
         <section class="hero" id="home">
             <div class="hero-content">
-                <span class="badge">Next-Generation Calendar</span>
-                <h1>Master your time with <br><span class="text-gradient">AI-Powered Planning</span></h1>
-                <p>Cross-platform scheduling integrated with advanced natural language command recognition, conflict detection, and local-to-cloud AI cascading.</p>
+                <span class="badge">Intelligent Agenda Management</span>
+                <h1>Master your time with <br><span class="text-gradient">Voice-First Planning</span></h1>
+                <p>Speak your appointments naturally, visualize your schedule intelligently, and experience seamless calendar management across languages.</p>
                 <div class="hero-buttons">
-                    <button class="btn-primary">Get Early Access</button>
+                    <button class="btn-primary" id="hero-get-access">Get Early Access</button>
                     <button class="btn-secondary">View Documentation</button>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="glass-card main-showcase" style="--rot: -5deg;">
-                    <img src="assets/screen1.jpg" alt="VocaPlan Mobile Interface 1" class="showcase-img">
-                </div>
-                <div class="glass-card secondary-showcase" style="--rot: 10deg;">
-                    <img src="assets/screen2.jpg" alt="VocaPlan Mobile Interface 2" class="showcase-img">
+                <div class="phone-mockup">
+                    <div class="phone-screen" id="app-container">
+                        <!-- Screen 1: Welcome -->
+                        <div class="app-screen" id="screen-welcome">
+                            <div class="app-header">
+                                <div class="app-icon-wrapper">
+                                    <svg class="app-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                </div>
+                                <h2>VocaPlan</h2>
+                                <p>Intelligent Agenda Management</p>
+                            </div>
+                            
+                            <div class="mic-button-wrapper">
+                                <button class="mic-button">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                                </button>
+                                <div class="mic-pulse"></div>
+                            </div>
+                            
+                            <div class="feature-list">
+                                <div class="app-feature-card">
+                                    <div class="app-feature-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="23"></line><line x1="8" y1="23" x2="16" y2="23"></line></svg>
+                                    </div>
+                                    <div class="app-feature-text">
+                                        <h4>Voice-First</h4>
+                                        <p>Speak your appointments naturally — AI understands you.</p>
+                                    </div>
+                                </div>
+                                <div class="app-feature-card">
+                                    <div class="app-feature-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                                    </div>
+                                    <div class="app-feature-text">
+                                        <h4>Smart Calendar</h4>
+                                        <p>Month, week, and agenda views with recurring events.</p>
+                                    </div>
+                                </div>
+                                <div class="app-feature-card">
+                                    <div class="app-feature-icon">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                                    </div>
+                                    <div class="app-feature-text">
+                                        <h4>Multilingual</h4>
+                                        <p>Works in 6 languages with holiday calendars worldwide.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="screen-footer">
+                                <button class="app-btn-primary" id="btn-get-started">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                    Get Started 
+                                    <span>→</span>
+                                </button>
+                                <p class="privacy-note">Your data stays private and on-device</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Screen 2: Quick Setup -->
+                        <div class="app-screen hidden-right" id="screen-setup">
+                            <div class="setup-header">
+                                <div class="app-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg> QUICK SETUP</div>
+                                <h2>Personalize<br>your experience</h2>
+                                <p>Just two quick things — you can always change these later.</p>
+                            </div>
+                            
+                            <div class="setup-form">
+                                <div class="form-group">
+                                    <label>YOUR NAME</label>
+                                    <input type="text" placeholder="e.g. Alex" class="app-input">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>PREFERRED LANGUAGE</label>
+                                    <div class="language-grid">
+                                        <div class="lang-option selected">
+                                            <span class="flag">🇺🇸</span> English
+                                            <div class="check-icon">
+                                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                            </div>
+                                        </div>
+                                        <div class="lang-option">
+                                            <span class="flag">🇩🇪</span> Deutsch
+                                        </div>
+                                        <div class="lang-option">
+                                            <span class="flag">🇬🇷</span> Ελληνικά
+                                        </div>
+                                        <div class="lang-option">
+                                            <span class="flag">🇪🇸</span> Español
+                                        </div>
+                                        <div class="lang-option">
+                                            <span class="flag">🇫🇷</span> Français
+                                        </div>
+                                        <div class="lang-option">
+                                            <span class="flag">🇮🇹</span> Italiano
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="screen-footer">
+                                <button class="app-btn-primary" id="btn-start-using">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                    Start Using VocaPlan
+                                </button>
+                                <p class="privacy-note">You can change all settings anytime in the sidebar</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -58,23 +163,23 @@
             <div class="features-grid">
                 <div class="feature-card glass-card hover-glow">
                     <div class="feature-icon">🎙️</div>
-                    <h3>Voice Interface</h3>
-                    <p>Natural language command recognition for seamless, hands-free event scheduling.</p>
+                    <h3>Voice-First</h3>
+                    <p>Speak your appointments naturally — AI understands you and schedules them instantly.</p>
                 </div>
                 <div class="feature-card glass-card hover-glow">
-                    <div class="feature-icon">📁</div>
-                    <h3>Multi-modal Input</h3>
-                    <p>Input data through manual forms, audio recordings, or AI-driven analysis of images and PDFs.</p>
+                    <div class="feature-icon">📅</div>
+                    <h3>Smart Calendar</h3>
+                    <p>Month, week, and agenda views with recurring events and automated conflict resolution.</p>
+                </div>
+                <div class="feature-card glass-card hover-glow">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Multilingual</h3>
+                    <p>Works flawlessly in 6 languages with built-in holiday calendars for regions worldwide.</p>
                 </div>
                 <div class="feature-card glass-card hover-glow">
                     <div class="feature-icon">⚡</div>
-                    <h3>Conflict Resolution</h3>
-                    <p>Built-in conflict detection intelligently negotiates your scheduling overlaps automatically.</p>
-                </div>
-                <div class="feature-card glass-card hover-glow">
-                    <div class="feature-icon">🌍</div>
-                    <h3>Cross-Platform</h3>
-                    <p>Built with React and Capacitor, offering native performance on Android and seamless PWA functionality.</p>
+                    <h3>Quick Setup</h3>
+                    <p>Personalize your experience in seconds with our streamlined, intuitive onboarding flow.</p>
                 </div>
             </div>
         </section>

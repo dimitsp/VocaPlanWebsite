@@ -49,4 +49,42 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.setProperty('--mouse-y', `${y}px`);
         });
     });
+
+    // App Mockup Interactivity
+    const screenWelcome = document.getElementById('screen-welcome');
+    const screenSetup = document.getElementById('screen-setup');
+    const btnGetStarted = document.getElementById('btn-get-started');
+    const heroBtnGetAccess = document.getElementById('hero-get-access');
+    const btnStartUsing = document.getElementById('btn-start-using');
+    
+    const goToSetup = () => {
+        if (screenWelcome && screenSetup) {
+            screenWelcome.classList.add('hidden-left');
+            screenSetup.classList.remove('hidden-right');
+        }
+    };
+
+    if (btnGetStarted) btnGetStarted.addEventListener('click', goToSetup);
+    if (heroBtnGetAccess) heroBtnGetAccess.addEventListener('click', goToSetup);
+
+    if (btnStartUsing) {
+        btnStartUsing.addEventListener('click', () => {
+            // Reset for demo purposes
+            if (screenWelcome && screenSetup) {
+                screenSetup.classList.add('hidden-right');
+                setTimeout(() => {
+                    screenWelcome.classList.remove('hidden-left');
+                }, 500);
+            }
+        });
+    }
+
+    // Language selection toggle
+    const langOptions = document.querySelectorAll('.lang-option');
+    langOptions.forEach(option => {
+        option.addEventListener('click', () => {
+            langOptions.forEach(opt => opt.classList.remove('selected'));
+            option.classList.add('selected');
+        });
+    });
 });
