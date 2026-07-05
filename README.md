@@ -1,3 +1,2 @@
-# VocaPlanWebsite
-Website for VocaPlan app
+# VocaPlan App Website
 all copyright reserved @dimitriostsepis
