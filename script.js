@@ -155,4 +155,33 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    // Document Modal Logic
+    const docModal = document.getElementById("doc-modal");
+    const docIframe = document.getElementById("doc-iframe");
+    const closeDocBtn = document.getElementById("close-doc-modal");
+    const btnViewDocs = document.getElementById("hero-view-docs");
+
+    if (btnViewDocs) {
+        btnViewDocs.addEventListener("click", function() {
+            if (docModal) docModal.classList.add("show");
+            if (docIframe) docIframe.src = "assets/Files/Executive%20Summary%20VocalPlan%20Platform%20Overview.pdf";
+        });
+    }
+
+    if (closeDocBtn) {
+        closeDocBtn.addEventListener("click", function() {
+            if (docModal) docModal.classList.remove("show");
+            if (docIframe) docIframe.src = "";
+        });
+    }
+
+    if (docModal) {
+        docModal.addEventListener("click", function(e) {
+            if (e.target === docModal) {
+                docModal.classList.remove("show");
+                if (docIframe) docIframe.src = "";
+            }
+        });
+    }
 });

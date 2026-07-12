@@ -1018,3 +1018,10 @@ footer {
     text-decoration: none;
     cursor: pointer;
 }
+
+.doc-iframe {
+    width: 90vw;
+    height: 90vh;
+    background: white;
+    border: none;
+}
