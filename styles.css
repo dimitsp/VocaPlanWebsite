@@ -797,6 +797,23 @@ button {
     font-size: 1.15rem;
 }
 
+.architecture-hero-video {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 20px auto 40px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4), 0 0 20px rgba(69, 243, 255, 0.1);
+    border: 1px solid var(--card-border);
+}
+
+.architecture-hero-video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 .report-section {
     width: 100%;
     margin-top: 20px;
